@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0,30,100)
+y=np.sin(x)
+z=np.cos(x)
+a=np.sin(x/2)
+b=np.cos(x/2)
+y1=np.sin(x+1)
+y2=np.cos(x+1)
+plt.plot(x,y,color='black',label='Sine wave')
+plt.plot(x,z,color='red',label='Cosine wave')
+plt.plot(x,a,color='blue',label='Sinx/2 wave')
+plt.plot(x,b,color='green',label='Cosine wave')
+plt.plot(x,y1,color='yellow',label='Sinx wave')
+plt.plot(x,y2,color='purple',label='Cosine wave')
+plt.legend(loc='best')
+plt.xlim(0,30)
+plt.show()
